@@ -1,0 +1,55 @@
+
+R version 4.6.1 (2026-06-24) -- "Happy Hop"
+Copyright (C) 2026 The R Foundation for Statistical Computing
+Platform: aarch64-apple-darwin23
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[R.app GUI 1.83 (8608) aarch64-apple-darwin23]
+
+> #Jaymo, 08/18/16, 
+> variable 1 <-c(1,2,3,4,5)
+Error: unexpected numeric constant in "variable 1"
+> variable1 <-c(1,2,3,4,5)
+> # Calculate mean of variable 1 
+> mean(variable1)
+[1] 3
+> sd(variable1)
+[1] 1.581139
+> 
+> 
+> median(variable1)
+[1] 3
+> mode
+function (x) 
+{
+    if (is.expression(x)) 
+        return("expression")
+    if (is.call(x)) 
+        return(switch(deparse(x[[1L]])[1L], `(` = "(", "call"))
+    if (is.name(x)) 
+        "name"
+    else switch(tx <- typeof(x), double = , integer = "numeric", 
+        closure = , builtin = , special = "function", tx)
+}
+<bytecode: 0x11ad0d628>
+<environment: namespace:base>
+> mode(variable1)
+[1] "numeric"
+> get_mode()
+Error in get_mode() : could not find function "get_mode"
+> get_mode(variable1)
+Error in get_mode(variable1) : could not find function "get_mode"
+> vari
