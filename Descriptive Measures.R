@@ -1,1 +1,0 @@
-L'Nauhre Bethea Pawar 08-18-2026 Purpose: to test functions of descriptive statistics 
